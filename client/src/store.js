@@ -1,4 +1,4 @@
 import { createStore } from "redux";
-import { populationReducer } from "./reducers/api";
+import { waterReducer } from "./reducers/api";
 
-export default createStore(populationReducer);
+export default createStore(waterReducer);

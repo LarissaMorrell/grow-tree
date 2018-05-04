@@ -1,12 +1,12 @@
-import { SAVE_POPULATION } from "../actions/population";
+import { SAVE_WATER } from "../actions/water";
 
 const initialState = {
-  population: 0
+  water: false
 };
 
-export const populationReducer = (state = initialState, action) => {
-  if (action.type === SAVE_POPULATION) {
-    return Object.assign({}, state, { population: action.population });
+export const waterReducer = (state = initialState, action) => {
+  if (action.type === SAVE_WATER) {
+    return Object.assign({}, state, { water: action.water });
   }
   return state;
 };
