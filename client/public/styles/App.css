@@ -29,7 +29,7 @@
   background: red;
 }
 
-div.PlantContainer {
+div.PlantGrowthContainer {
   max-width: 800px;
   margin: 50px auto;
   display: flex;
