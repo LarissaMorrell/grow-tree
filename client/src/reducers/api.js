@@ -1,11 +1,12 @@
-import { SAVE_WATER } from "../actions/water";
+import { WATER_PLANT } from "../actions/water";
 
 const initialState = {
-  water: false
+  water: 0
 };
 
 export const waterReducer = (state = initialState, action) => {
-  if (action.type === SAVE_WATER) {
+  if (action.type === WATER_PLANT) {
+    console.log(action.water);
     return Object.assign({}, state, { water: action.water });
   }
   return state;

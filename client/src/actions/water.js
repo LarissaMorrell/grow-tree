@@ -1,8 +1,8 @@
 import { API_BASE_URL } from "../config";
 
-export const SAVE_WATER = "SAVE_WATER";
-export const saveWater = water => ({
-  type: SAVE_WATER,
+export const WATER_PLANT = "WATER_PLANT";
+export const waterPlant = water => ({
+  type: WATER_PLANT,
   water
 });
 
@@ -14,6 +14,6 @@ export const getWater = () => dispatch => {
     }
   })
     .then(res => res.json())
-    .then(water => dispatch(saveWater(water)))
+    .then(water => dispatch(waterPlant(water)))
     .catch(err => {});
 };

@@ -41,10 +41,7 @@ div.Plant > img {
   height: 500px;
 }
 
-div.Water > img {
+div.Water > img,
+div.Sun > img {
   height: 150px;
-}
-
-div.WaterShadow > img {
-  width: 150px;
 }
