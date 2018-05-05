@@ -1,14 +1,13 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { saveWater } from "../actions/water";
-import Plant from "./Plant";
+import PlantContainer from "./PlantContainer";
 import Water from "./Water";
 import WaterShadow from "./WaterShadow";
 
 class App extends Component {
   render() {
-    console.log(this.props);
-    let color = this.props.water ? "clicked" : null;
+    let color = this.props.water ? "clicked" : "";
     return (
       <div className="App">
         <header className="App-header">
@@ -16,13 +15,9 @@ class App extends Component {
         </header>
         <div
           className={`testing ${color}`}
-          onClick={e => this.props.dispatch(saveWater(true))}
+          onClick={e => this.props.dispatch(saveWater(!this.props.water))}
         />
-        <Plant />
-        <div className="water-container">
-          <Water />
-          <WaterShadow />
-        </div>
+        <PlantContainer />
       </div>
     );
   }
