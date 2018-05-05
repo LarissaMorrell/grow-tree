@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { saveWater } from "../actions/water";
-import PlantContainer from "./PlantContainer";
+import PlantGrowthContainer from "./PlantGrowthContainer";
 import Water from "./Water";
 import WaterShadow from "./WaterShadow";
 
@@ -17,7 +17,7 @@ class App extends Component {
           className={`testing ${color}`}
           onClick={e => this.props.dispatch(saveWater(!this.props.water))}
         />
-        <PlantContainer />
+        <PlantGrowthContainer />
       </div>
     );
   }

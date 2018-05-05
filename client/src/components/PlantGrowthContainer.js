@@ -3,10 +3,10 @@ import Plant from "./Plant";
 import Water from "./Water";
 import WaterShadow from "./WaterShadow";
 
-export default class PlantContainer extends Component {
+export default class PlantGrowthContainer extends Component {
   render() {
     return (
-      <div className="PlantContainer">
+      <div className="PlantGrowthContainer">
         <Plant />
         <div className="water-container">
           <Water />
