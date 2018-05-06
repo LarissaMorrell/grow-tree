@@ -1,11 +1,4 @@
-import { createStore, combineReducers } from "redux";
-import { waterReducer, sunReducer } from "./reducers/api";
+import { createStore } from "redux";
+import { resourcesReducer } from "./reducers/api";
 
-const store = createStore(
-  combineReducers({
-    water: waterReducer,
-    sun: sunReducer
-  })
-);
-
-export default store;
+export default createStore(resourcesReducer);

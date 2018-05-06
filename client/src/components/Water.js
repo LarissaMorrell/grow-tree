@@ -4,7 +4,7 @@ import { waterPlant } from "../actions/resources";
 
 export class Water extends Component {
   render() {
-    console.log(this.props.water);
+    console.log("water = " + this.props.water);
     return (
       <div className="Water">
         <input

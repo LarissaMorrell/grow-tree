@@ -5,16 +5,12 @@ const initialState = {
   water: 0
 };
 
-export const waterReducer = (state = initialState, action) => {
+export const resourcesReducer = (state = initialState, action) => {
   if (action.type === WATER_PLANT) {
-    return Object.assign({}, state, { water: state.water++ });
+    return Object.assign({}, state, { water: ++state.water });
   }
-  return state;
-};
-
-export const sunReducer = (state = initialState, action) => {
   if (action.type === SUN_PLANT) {
-    return Object.assign({}, state, { water: state.sun++ });
+    return Object.assign({}, state, { sun: ++state.sun });
   }
   return state;
 };
