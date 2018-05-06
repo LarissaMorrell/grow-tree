@@ -1,16 +1,17 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { waterPlant } from "../actions/water";
+import { waterPlant } from "../actions/resources";
 
 export class Water extends Component {
   render() {
     console.log(this.props.water);
     return (
       <div className="Water">
-        <img
-          src="/media/water-droplet.png"
+        <input
+          type="image"
           alt="water"
-          onClick={e => this.props.dispatch(waterPlant(this.props.water++))}
+          src="/media/water-droplet.png"
+          onClick={e => this.props.dispatch(waterPlant())}
         />
       </div>
     );

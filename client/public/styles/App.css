@@ -41,7 +41,7 @@ div.Plant > img {
   height: 500px;
 }
 
-div.Water > img,
-div.Sun > img {
+div.Water > input,
+div.Sun > input {
   height: 150px;
 }
