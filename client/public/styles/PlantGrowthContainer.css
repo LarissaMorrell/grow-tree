@@ -36,7 +36,6 @@ div.Plant > h3 {
   right: 23px;
 }
 
-div.Water > input,
-div.Sun > input {
+div.Resource > input {
   height: 150px;
 }
