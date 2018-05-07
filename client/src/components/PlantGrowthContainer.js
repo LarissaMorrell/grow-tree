@@ -26,8 +26,6 @@ export class PlantGrowthContainer extends Component {
   }
 }
 const mapStateToProps = state => ({
-  water: state.water,
-  sun: state.sun,
   treeMsg: state.treeMsg
 });
 
