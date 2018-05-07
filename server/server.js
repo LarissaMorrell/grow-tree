@@ -14,7 +14,7 @@ app.use(function(req, res, next) {
 });
 
 app.get("/api", (req, res) => {
-  res.send("Hello World!");
+  res.send({ greeting: "Hello World!" });
 });
 
 app.listen(port, () => console.log(`Listening on port ${port}`));

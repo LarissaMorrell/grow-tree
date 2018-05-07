@@ -8,11 +8,11 @@ import { treeTransformation } from "../actions/transform";
 export class PlantGrowthContainer extends Component {
   constructor(props) {
     super(props);
-    // this.treegrowth = this.treegrowth.bind(this);
+    this.treegrowth = this.treegrowth.bind(this);
   }
   treegrowth(water, sun) {
     if (water >= 3 && sun >= 3) {
-      // this.props.dispatch(treeTransformation());
+      this.props.dispatch(treeTransformation());
     }
   }
   render() {

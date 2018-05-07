@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { waterPlant } from "../actions/resources";
-import { treeTransformation } from "../actions/transform";
 
 export class Water extends Component {
   render() {
@@ -11,7 +10,7 @@ export class Water extends Component {
           type="image"
           alt="water"
           src="/media/water-droplet.png"
-          onClick={e => this.props.dispatch(treeTransformation(4, 4))}
+          onClick={e => this.props.dispatch(waterPlant())}
         />
       </div>
     );

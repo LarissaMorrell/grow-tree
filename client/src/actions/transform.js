@@ -7,7 +7,6 @@ export const treeTransform = greeting => ({
 });
 
 export const treeTransformation = () => dispatch => {
-  console.log("treeTransform using ", API_BASE_URL);
   return fetch(`${API_BASE_URL}/api`, {
     method: "GET",
     headers: {
@@ -15,9 +14,8 @@ export const treeTransformation = () => dispatch => {
     }
   })
     .then(res => res.json())
-    .then(g => console.log(g))
-    .then(greeting => dispatch(treeTransform(greeting)))
+    .then(res => dispatch(treeTransform(res.greeting)))
     .catch(err => {
-      console.log("The tree could not transform");
+      console.log(err);
     });
 };
