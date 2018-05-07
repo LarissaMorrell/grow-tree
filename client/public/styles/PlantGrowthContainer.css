@@ -6,8 +6,34 @@ div.PlantGrowthContainer {
   justify-content: space-around;
 }
 
-div.Plant > img {
+div.Plant {
+  width: 500px;
   height: 500px;
+  position: relative;
+}
+
+div.Plant > .sapling,
+div.Plant .tree {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-height: 100%;
+  max-width: 100%;
+}
+div.Plant > .speech-bubble {
+  position: absolute;
+  top: 80px;
+  right: 10px;
+  max-width: 40%;
+}
+div.Plant > h3 {
+  width: 35%;
+  word-wrap: break-word;
+  text-align: center;
+  display: block;
+  position: absolute;
+  top: 110px;
+  right: 23px;
 }
 
 div.Water > input,

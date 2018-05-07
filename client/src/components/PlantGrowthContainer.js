@@ -18,9 +18,11 @@ export class PlantGrowthContainer extends Component {
   render() {
     return (
       <div className="PlantGrowthContainer">
-        <ResourcesCounter treegrowth={this.treegrowth} />
         <Plant treeMsg={this.props.treeMsg} />
-        <ResourcesContainer />
+        <div>
+          <ResourcesCounter treegrowth={this.treegrowth} />
+          <ResourcesContainer />
+        </div>
       </div>
     );
   }
