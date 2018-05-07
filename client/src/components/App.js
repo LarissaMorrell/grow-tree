@@ -6,7 +6,9 @@ export default class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">Water the plant</h1>
+          <h1 className="App-title">
+            Care for the tree<br />to make it grow
+          </h1>
         </header>
         <PlantGrowthContainer />
       </div>
