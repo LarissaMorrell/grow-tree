@@ -3,7 +3,6 @@ import { connect } from "react-redux";
 
 export class ResourcesCounter extends Component {
   render() {
-    console.log("water = " + this.props.water);
     return (
       <div className="ResourcesCounter">
         <div className="row">

@@ -4,7 +4,6 @@ import { sunPlant } from "../actions/resources";
 
 export class Sun extends Component {
   render() {
-    console.log("sun = " + this.props.sun);
     return (
       <div className="Sun">
         <input
