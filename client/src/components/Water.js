@@ -16,9 +16,4 @@ export class Water extends Component {
     );
   }
 }
-
-const mapStateToProps = state => ({
-  water: state.water
-});
-
-export default connect(mapStateToProps)(Water);
+export default connect()(Water);

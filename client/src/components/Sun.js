@@ -17,8 +17,4 @@ export class Sun extends Component {
   }
 }
 
-const mapStateToProps = state => ({
-  sun: state.sun
-});
-
-export default connect(mapStateToProps)(Sun);
+export default connect()(Sun);
