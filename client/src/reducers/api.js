@@ -14,7 +14,7 @@ export const resourcesReducer = (state = initialState, action) => {
     return Object.assign({}, state, { sun: ++state.sun });
   }
   if (action.type === TREE_TRANSFORM) {
-    return Object.assign({}, state, { transform: action.greeting });
+    return Object.assign({}, state, { treeMsg: action.greeting });
   }
   return state;
 };

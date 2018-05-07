@@ -15,7 +15,6 @@ export const treeTransformation = () => dispatch => {
     }
   })
     .then(res => res.json())
-    .then(greeting => console.log(greeting))
     .then(greeting => dispatch(treeTransform(greeting)))
     .catch(err => {
       console.log("The tree could not transform");
