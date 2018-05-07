@@ -1,14 +1,34 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
+import ResourcesCounter from "./ResourcesCounter";
 import Plant from "./Plant";
 import ResourcesContainer from "./ResourcesContainer";
+import { treeTransformation } from "../actions/transform";
 
-export default class PlantGrowthContainer extends Component {
+export class PlantGrowthContainer extends Component {
+  constructor(props) {
+    super(props);
+    // this.treegrowth = this.treegrowth.bind(this);
+  }
+  treegrowth(water, sun) {
+    if (water >= 3 && sun >= 3) {
+      // this.props.dispatch(treeTransformation());
+    }
+  }
   render() {
     return (
       <div className="PlantGrowthContainer">
-        <Plant />
+        <ResourcesCounter treegrowth={this.treegrowth} />
+        <Plant treeMsg={this.props.treeMsg} />
         <ResourcesContainer />
       </div>
     );
   }
 }
+const mapStateToProps = state => ({
+  water: state.water,
+  sun: state.sun,
+  treeMsg: state.treeMsg
+});
+
+export default connect(mapStateToProps)(PlantGrowthContainer);

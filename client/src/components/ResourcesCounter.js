@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 
 export class ResourcesCounter extends Component {
   render() {
+    // this.props.treegrowth(this.props.water, this.props.sun);
     return (
       <div className="ResourcesCounter">
         <div className="row">

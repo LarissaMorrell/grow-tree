@@ -11,7 +11,7 @@ export class Water extends Component {
           type="image"
           alt="water"
           src="/media/water-droplet.png"
-          onClick={e => this.props.dispatch(treeTransformation())}
+          onClick={e => this.props.dispatch(treeTransformation(4, 4))}
         />
       </div>
     );
