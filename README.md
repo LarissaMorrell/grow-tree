@@ -27,7 +27,11 @@ This server must be running in order to perform RESTful calls to the server.
 
 Unit tests have been written using [Enzyme](https://github.com/airbnb/enzyme) and [Jest](https://facebook.github.io/jest/).
 
-To run client-side testing `cd` into the client folder and run: ###`npm test`
+To run client-side testing `cd` into the client folder and run: `npm test`
+
+Unit tests have been written using Jest and Enzyme. All components have smoke tests to ensure they render on the screen.
+
+Actions have been tested to be sure they return the correct action.
 
 # Structure
 
@@ -43,7 +47,7 @@ The root component `App`, contains a header and a `PlantGrowthContainer`. The `P
 
 ### Server Structure
 
-The server folder contains a `server.js` which uses [Express.js](https://expressjs.com/) apply middleware and perform GET requests.
+The server folder contains a `server.js` which uses [Express.js](https://expressjs.com/) to apply middleware and perform GET requests.
 
 # Linting
 
