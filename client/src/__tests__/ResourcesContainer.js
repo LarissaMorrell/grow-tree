@@ -1,6 +1,7 @@
 import React from "react";
 import { shallow, mount } from "enzyme";
 import { ResourcesContainer } from "../components/ResourcesContainer";
+import { Resource } from "../components/Resource";
 
 describe("<ResourcesContainer />", () => {
   it("renders without crashing", () => {
