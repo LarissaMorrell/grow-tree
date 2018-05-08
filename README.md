@@ -12,12 +12,12 @@ Fork or clone this repo onto you local machine and then run `$ npm install`
 
 ### Client Server
 
-To run the client server `cd` into the client directory and run: ###`npm start`
+To run the client server `cd` into the client directory and run: `npm start`
 This runs the app in the development mode. Open http://localhost:3000 to view it in the browser.
 
 ### Back End Server
 
-To run the back end server `cd` into the server directory you run: ###`npm start`
+To run the back end server `cd` into the server directory you run: `npm start`
 This server must be running in order to perform RESTful calls to the server.
 
 * [Client](#tree/master/client)
