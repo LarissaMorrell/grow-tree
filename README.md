@@ -37,6 +37,23 @@ Actions have been tested to be sure they return the correct action.
 
 This project is a full stack application which contains a client folder and server folder.
 
+### The Process
+
+I built this full stack app using the Atom IDE, which included [linter](https://atom.io/packages/linter) - a package available to aid with linting your code after each save. For debugging, I used Chrome Developer Tools with the [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en) extension.
+
+When first designing this app I envisioned planting a garden, but scaled this down to the "planting" of a tree, for the sake of time. In general, here are the steps which were completed:
+
+* I started with [Create React App](https://github.com/facebookincubator/create-react-app) and added a server.
+* I used [Postman](https://www.getpostman.com/) to ensure that my server was working.
+* In the client I built the basic components with little functionality.
+* Added rough styling for layout
+* I added Redux and created an action, reducer, and store on the most basic level, and checked that it worked going through the Redux architecture.
+* Added needed elements to dummy components
+* Added connect() to components needing access to store
+* Added dispatching where needed for resource Actions
+* Wrote and added action that makes call to server and attached it to tree component
+* Wrote tests/README and made any other adjustments
+
 ### Client Structure
 
 The client is split into a `public` and `src` subfolders. The `public` subfolder contains stylesheets, a favicon, media, and the `index.html` with a `<div>` root element.
@@ -48,7 +65,3 @@ The root component `App`, contains a header and a `PlantGrowthContainer`. The `P
 ### Server Structure
 
 The server folder contains a `server.js` which uses [Express.js](https://expressjs.com/) to apply middleware and perform GET requests.
-
-# Linting
-
-This code was linted in development using [linter](https://atom.io/packages/linter), a package available through the Atom IDE.
