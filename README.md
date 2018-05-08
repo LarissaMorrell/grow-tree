@@ -2,7 +2,7 @@
 
 This application is built using Javascript, React, Redux, Express, Node.
 
-The client side was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+The client side was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app), and uses a Webpack module bundler.
 
 # Installation
 
